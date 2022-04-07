@@ -1,0 +1,38 @@
+<HTML>
+	<HEAD>
+		<meta charset="utf-8">
+		<meta name="author" content="Adolfo Jesús Viñe & Irene Ruiz">
+		<meta name="description" content="Hace sumas, restas, multiplicaciones y divisiones.">
+		<TITLE>CALCULADORA</TITLE>
+		<script type="text/javascript" src="RuizJuez_Vi%C3%B1eGhezzi_ip2.js"></script>
+	</HEAD>
+	<BODY>
+		<SCRIPT LANGUAGE ="JavaScript">
+
+			var operador, num1, resultado, num2;
+
+
+
+
+operador = window.prompt('Introduce un operador(+.-.*./):');
+num1 = parseFloat(window.prompt('Introduce el primer numero:'));
+num2 = parseFloat(window.prompt('Introduce el segundo numero:'));
+if (operador == '+') {
+  window.alert(suma());
+} else if (operador == '-') {
+  window.alert(resta());
+} else if (operador == '*') {
+  window.alert(multiplicacion());
+} else if (operador == '/') {
+  if (num2 != '0') {
+    window.alert(division());
+  } else {
+    window.alert('El divisor no puede ser 0');
+  }
+} else {
+  window.alert('El operador no es valido');
+}
+
+		</SCRIPT>
+	</BODY>
+</HTML>

@@ -1,0 +1,345 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <variables>
+    <variable type="" id="zfN%gD*B{{6M;8HXcIDj">operador</variable>
+    <variable type="" id="HTvs#feR3nA~5uO4=;45">num1</variable>
+    <variable type="" id="ea6XNPV~sh*CHI9Ui5*{">resultado</variable>
+    <variable type="" id="vSv{i]!/}mr0{toD04z]">num2</variable>
+  </variables>
+  <block type="variables_set" id="Fm~-Yz(qNJUuM8n[]q8Q" x="-312" y="13">
+    <field name="VAR" id="zfN%gD*B{{6M;8HXcIDj" variabletype="">operador</field>
+    <value name="VALUE">
+      <block type="text_prompt_ext" id=",GJhTXSF|LYTM-KwOB4n">
+        <mutation type="TEXT"></mutation>
+        <field name="TYPE">TEXT</field>
+        <value name="TEXT">
+          <shadow type="text" id="AE,hAI!}UpOn|%3/IfCy">
+            <field name="TEXT">Introduce un operador(+.-.*./):</field>
+          </shadow>
+        </value>
+      </block>
+    </value>
+    <next>
+      <block type="variables_set" id="pro3K|JK41+R_WXon{hk">
+        <field name="VAR" id="HTvs#feR3nA~5uO4=;45" variabletype="">num1</field>
+        <value name="VALUE">
+          <block type="text_prompt_ext" id="7y;9~E,k+(}lgTf%?z=+">
+            <mutation type="NUMBER"></mutation>
+            <field name="TYPE">NUMBER</field>
+            <value name="TEXT">
+              <shadow type="text" id="_E*6Ptg$2u=*943t1BKQ">
+                <field name="TEXT">Introduce el primer numero:</field>
+              </shadow>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set" id="$:;U^g/)BModbW%x5z#c">
+            <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+            <value name="VALUE">
+              <block type="text_prompt_ext" id="#F*aizMb[QlP+RI{5KqF">
+                <mutation type="NUMBER"></mutation>
+                <field name="TYPE">NUMBER</field>
+                <value name="TEXT">
+                  <shadow type="text" id="eWR^NJr;Y:12E!Vl:T_A">
+                    <field name="TEXT">Introduce el segundo numero:</field>
+                  </shadow>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="EhrFx@Z_u4@/TE}XdC|=">
+                <mutation elseif="3" else="1"></mutation>
+                <value name="IF0">
+                  <block type="logic_compare" id="X53ce/MhGoW/P%P_9R]:">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="?^hbb1ipZW3FFRH4$L(5">
+                        <field name="VAR" id="zfN%gD*B{{6M;8HXcIDj" variabletype="">operador</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="zgJqRF(C|u/,a7={L+rq">
+                        <field name="TEXT">+</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="text_print" id="^GTQ$-cowlD)#ckH-N#5">
+                    <value name="TEXT">
+                      <shadow type="text" id="s/gqRw`dua5_]j+2kOzp">
+                        <field name="TEXT">El divisor no puede ser 0</field>
+                      </shadow>
+                      <block type="procedures_callreturn" id="V0G7nc5V+K}a~[h5zmpW">
+                        <mutation name="suma"></mutation>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF1">
+                  <block type="logic_compare" id="l(lz,rG%ycPH7;dRPh)]">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="e2JgTyC$.gY.!g8n#!*U">
+                        <field name="VAR" id="zfN%gD*B{{6M;8HXcIDj" variabletype="">operador</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="9P`WNfn?bAj2km`NGFEe">
+                        <field name="TEXT">-</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO1">
+                  <block type="text_print" id="#8p#KS+qRK;?I#jye-!`">
+                    <value name="TEXT">
+                      <shadow type="text" id="s/gqRw`dua5_]j+2kOzp">
+                        <field name="TEXT">El divisor no puede ser 0</field>
+                      </shadow>
+                      <block type="procedures_callreturn" id="e:hqH|vnR{g[wnj[qqmj">
+                        <mutation name="resta"></mutation>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF2">
+                  <block type="logic_compare" id="6dbr,AEj9e0?3b)|]2ii">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="0rtwUnOkbf7W9-=fpU~=">
+                        <field name="VAR" id="zfN%gD*B{{6M;8HXcIDj" variabletype="">operador</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="YI58H=wPx)2+pC2}Tp;8">
+                        <field name="TEXT">*</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO2">
+                  <block type="text_print" id="el|`pN9$|9^-}U.Vz$Ct">
+                    <value name="TEXT">
+                      <shadow type="text" id="2:aK[5)R~ACD`9?+jOAB">
+                        <field name="TEXT">El divisor no puede ser 0</field>
+                      </shadow>
+                      <block type="procedures_callreturn" id="l?{E*oNT-O1zIti;]Lsi">
+                        <mutation name="multiplicacion"></mutation>
+                      </block>
+                    </value>
+                  </block>
+                </statement>
+                <value name="IF3">
+                  <block type="logic_compare" id="h@roY?`70q8X{pBb3tpA">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="MGcxeLx(,.)o5UxfIps{">
+                        <field name="VAR" id="zfN%gD*B{{6M;8HXcIDj" variabletype="">operador</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="AR`o#Jtde/jQ)O9%e)3R">
+                        <field name="TEXT">/</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO3">
+                  <block type="controls_if" id="4eHEL*YxT{%l5V]8ZL*N">
+                    <mutation else="1"></mutation>
+                    <value name="IF0">
+                      <block type="logic_compare" id="QFA1riKcKSwPoCf|Tue(">
+                        <field name="OP">NEQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="KtVm2Zf0QpaADGm31=zK">
+                            <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="C{h[e2^dGct=Eawhx4L*">
+                            <field name="TEXT">0</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="text_print" id="?Afe1_jb=;]i8Pl39kJ7">
+                        <value name="TEXT">
+                          <shadow type="text" id="VRSTky1|kt,pZJHikc#^">
+                            <field name="TEXT">El divisor no puede ser 0</field>
+                          </shadow>
+                          <block type="procedures_callreturn" id="C=w/hmh%+7-Ao$~o~g4l">
+                            <mutation name="division"></mutation>
+                          </block>
+                        </value>
+                      </block>
+                    </statement>
+                    <statement name="ELSE">
+                      <block type="text_print" id="0:V2D)1ZUVNag}!V]Gwl">
+                        <value name="TEXT">
+                          <shadow type="text" id="rGN3,fbpjiX3O#T;aIH$">
+                            <field name="TEXT">El divisor no puede ser 0</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="text_print" id="q)0zRlH~~iwZQK(@HxxZ">
+                    <value name="TEXT">
+                      <shadow type="text" id="p(!aG;:0c9g^PW#-rN?x">
+                        <field name="TEXT">El operador no es válido</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+  <block type="procedures_defreturn" id="g{FG0lp$98,Gi3][q}B0" x="338" y="538">
+    <field name="NAME">resta</field>
+    <comment pinned="true" h="80" w="160">Hace restas</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="6Y~F$Ckxo{-;W,@=Bk3K">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="H?~^Dyd*dz*:Nh4.I4+i">
+            <field name="OP">MINUS</field>
+            <value name="A">
+              <shadow type="math_number" id="j+U#!DTRoicXrXGpMWKA">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="R=*,;p/7g^i_%uka:_y+">
+                <field name="VAR" id="HTvs#feR3nA~5uO4=;45" variabletype="">num1</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="b,eibzV%G(/e+GLv?B%~">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id=")z;or9Qc3M~#n#vGeG3$">
+                <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="lEz@+rYV=pZ4jmI}NBvs">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="f@rfco{XHH1+4mw[crl?" x="-337" y="787">
+    <field name="NAME">multiplicacion</field>
+    <comment pinned="true" h="80" w="160">Hace multiplicaciones</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="pN0NXh@`/@F#lkX~yu(c">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="bxKJLh`CR({0R|N}58]m">
+            <field name="OP">MULTIPLY</field>
+            <value name="A">
+              <shadow type="math_number" id="j+U#!DTRoicXrXGpMWKA">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="|wlv70sIKgsGnm+Lk`;l">
+                <field name="VAR" id="HTvs#feR3nA~5uO4=;45" variabletype="">num1</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="b,eibzV%G(/e+GLv?B%~">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="Qx%^(ipN,=vi0YX(I-.W">
+                <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="/$eg@lUy^{cgUB[XmRZE">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="Psg03qx%5+a,Avt:u_Ki" x="863" y="762">
+    <field name="NAME">division</field>
+    <comment pinned="true" h="80" w="160">Hace divisiones</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="Ht#zNl7!Jj(V9F.Fx?v*">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="vrYW$y]_MGN!6#f%T_kf">
+            <field name="OP">DIVIDE</field>
+            <value name="A">
+              <shadow type="math_number" id="j+U#!DTRoicXrXGpMWKA">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="uDPTaX%yl;/jUt2!I0%e">
+                <field name="VAR" id="HTvs#feR3nA~5uO4=;45" variabletype="">num1</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="b,eibzV%G(/e+GLv?B%~">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="Rs@NGa!u@-4n_^+dDFb7">
+                <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="%hM*_8Eps?r6K1i,3^~~">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+      </block>
+    </value>
+  </block>
+  <block type="procedures_defreturn" id="GV=]uI!Pg{cY31}gdx8^" x="312" y="937">
+    <field name="NAME">suma</field>
+    <comment pinned="true" h="80" w="160">Hace sumas</comment>
+    <statement name="STACK">
+      <block type="variables_set" id="WwmIE=n8y[l5sz$A2`)!">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+        <value name="VALUE">
+          <block type="math_arithmetic" id="-ZXW:]jVww/:Tw.VJg(n">
+            <field name="OP">ADD</field>
+            <value name="A">
+              <shadow type="math_number" id="j+U#!DTRoicXrXGpMWKA">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="ZBTq(Yb0UnIoZE7@V6!Y">
+                <field name="VAR" id="HTvs#feR3nA~5uO4=;45" variabletype="">num1</field>
+              </block>
+            </value>
+            <value name="B">
+              <shadow type="math_number" id="b,eibzV%G(/e+GLv?B%~">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="variables_get" id="!8tgxXyCJ9D]u9D}v_L8">
+                <field name="VAR" id="vSv{i]!/}mr0{toD04z]" variabletype="">num2</field>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block type="variables_get" id="Z-b;[.9H_+U:o$.h0BMw">
+        <field name="VAR" id="ea6XNPV~sh*CHI9Ui5*{" variabletype="">resultado</field>
+      </block>
+    </value>
+  </block>
+</xml>
